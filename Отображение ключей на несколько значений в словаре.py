@@ -27,10 +27,6 @@ d.setdefault('a', []).append(1)
 d.setdefault('a', []).append(2)
 d.setdefault('b', []).append(4)
 
-d = {}
-for key, value in pairs:
-    if key not in d: d[key] = []
-        d[key].append(value)
-    d = defaultdict(list)
-for key, value in pairs:
+d = defaultdict(list)
+for key, value in d:
     d[key].append(value)
